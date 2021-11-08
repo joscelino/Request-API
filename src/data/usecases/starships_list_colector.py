@@ -6,7 +6,7 @@ from src.infra import SwapApiConsumer
 
 class StarShipsListColector(StarShipsListColectorInterface):
 
-    """StarShipsListColector uecase."""
+    """StarShipsListColector usecase."""
 
     def __init__(self, api_consumer: Type[SwapApiConsumer]) -> None:
         self.__api_consumer = api_consumer
