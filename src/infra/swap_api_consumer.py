@@ -4,10 +4,11 @@ from typing import Dict, Tuple, Type
 import requests
 from requests import Request
 
+from src.data.interfaces import SwapiAPiConsumerInterface
 from src.errors import HttpRequestError
 
 
-class SwapApiConsumer:
+class SwapApiConsumer(SwapiAPiConsumerInterface):
 
     """Class to consume swapi api with http requests"""
 
